@@ -1,0 +1,330 @@
+/* 
+DETAILS
+GODKNOWS NYANDORO
+R237561Y
+LEVEL 1.2
+HAI
+*/
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(white,black);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: gray; 
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 999;
+ 
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;    
+}
+
+a { 
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+a:hover{
+    background-color: transparent;
+}
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+ 
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img {
+    max-width: 100%;
+    padding:50px 0;
+}
+.col-2 video {
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: gray;
+}
+
+.header {
+    background: radial-gradient(white,black);
+    color: azure;
+}
+
+.header .row {
+    margin-top: 70px;
+}
+
+.categories {
+    margin: 70px 0;
+}
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0,5s;
+}
+.col-4 img {
+    width: 100%
+}
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color:#222
+}
+
+.title::after {
+    content: '';
+    background: gray;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.col-4 p {
+    font-size: 14px;
+    
+        
+}
+.rating .fa {
+    color: gold;
+
+}
+.col-4:hover {
+    transform: translateY(-5px);
+    background: grey;
+}
+
+.offer {
+    background: radial-gradient(white,black);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img {
+    padding: 50px
+}
+small {
+    color: black;
+}
+
+footer {
+    background: black;
+    color: bisque;
+    
+}
+footer a {
+    color: bisque;
+}
+footer .col-4:hover {
+    transform: none;
+    background: none;
+   
+
+}
+ 
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+
+}
+ 
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position:absolute;
+        top: 70px;
+        left: 0;
+        background: black;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin-right:50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+
+    }
+
+}
+
+/* media less than 600px screen size*/
+@media only screen and (max-width: 600px) {
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+    }
+}
+
+
+/*Login and registration*/
+
+.signInbody {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-size: 15px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form form {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 500px;
+    box-shadow: 3px 3px 3px black;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px 0 20px 0;
+}
+.form form input {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+input:focus {
+    outline: none;
+}
+::placeholder {
+    padding-left: 4px;
+}
+.form form select {
+    width: 100%;
+    height: 27px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.submitButton input[type='submit'] {
+    background: black;
+    width: 200px;
+    border-radius: 20px;
+    height: 30px;
+    border: transparent;
+    color: white;
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+.submitButton input[type='submit']:hover {
+    transform: scale(1.2);
+}
+.login a{
+    text-decoration: underline;
+}
+.terms {
+    display: flex;
+    align-items: center;
+  }
+
+.terms input[type="checkbox"] {
+    margin-right: 10px;
+    height: auto;
+    width: auto;
+  }
+.terms a {
+    text-decoration: underline;
+}
+
+.mailing {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+.mailing input[type="checkbox"] {
+    margin-right: 10px;
+    height: auto;
+    width: auto;
+  }
+
+
